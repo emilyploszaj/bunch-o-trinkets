@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GGG",
+        "DDF",
+        "GGG"
+    ],
+    "key": {
+        "G": {
+            "item": "minecraft:gold_ingot"
+		},
+		"D": {
+			"item": "minecraft:diamond"
+		},
+        "F": {
+            "item": "minecraft:feather"
+        }
+    },
+    "result": {
+        "item": "bunchotrinkets:aglet_of_the_traveller",
+        "count": 1
+    }
+}

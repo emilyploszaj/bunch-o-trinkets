@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "S S",
+        "SDS",
+        " G "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:string"
+		},
+		"D": {
+			"item": "minecraft:diamond"
+		},
+        "G": {
+            "item": "minecraft:golden_carrot"
+        }
+    },
+    "result": {
+        "item": "bunchotrinkets:gluttony_amulet",
+        "count": 1
+    }
+}

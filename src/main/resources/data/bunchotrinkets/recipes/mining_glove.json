@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  L",
+        "LLL",
+        " LW"
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:leather"
+		},
+		"W": {
+			"tag": "minecraft:wool"
+		}
+    },
+    "result": {
+        "item": "bunchotrinkets:mining_glove",
+        "count": 1
+    }
+}

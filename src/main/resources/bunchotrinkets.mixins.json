@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "dev.emi.bunchotrinkets.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"PlayerEntityMixin",
+		"EfficiencyEnchantmentMixin"
+	],
+	"client": [
+		"MinecraftClientMixin",
+		"AbstractContainerScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

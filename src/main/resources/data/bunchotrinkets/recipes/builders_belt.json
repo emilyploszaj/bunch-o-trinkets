@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " L ",
+        "L L",
+        "PIA"
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:leather"
+		},
+		"I": {
+			"item": "minecraft:iron_ingot"
+		},
+		"P": {
+			"item": "minecraft:iron_pickaxe"
+		},
+		"A": {
+			"item": "minecraft:golden_axe"
+		}
+    },
+    "result": {
+        "item": "bunchotrinkets:builders_belt",
+        "count": 1
+    }
+}

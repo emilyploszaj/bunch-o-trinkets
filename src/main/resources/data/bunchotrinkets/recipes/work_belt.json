@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " L ",
+        "LEL",
+        " G "
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:leather"
+		},
+		"E": {
+			"item": "minecraft:ender_eye"
+		},
+		"G": {
+			"item": "minecraft:gold_ingot"
+		}
+    },
+    "result": {
+        "item": "bunchotrinkets:work_belt",
+        "count": 1
+    }
+}

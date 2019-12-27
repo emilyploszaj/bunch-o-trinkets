@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "DTF",
+        "III"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+		},
+		"D": {
+			"item": "minecraft:diamond"
+		},
+        "T": {
+            "item": "minecraft:tnt"
+        },
+        "F": {
+            "item": "minecraft:firework_rocket"
+        }
+    },
+    "result": {
+        "item": "bunchotrinkets:rocket_aglet",
+        "count": 1
+    }
+}
