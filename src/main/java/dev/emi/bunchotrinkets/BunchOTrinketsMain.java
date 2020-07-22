@@ -14,8 +14,8 @@ import dev.emi.trinkets.api.TrinketSlots;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.network.ServerSidePacketRegistry;
-import net.minecraft.entity.FireworkEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.projectile.FireworkRocketEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -47,7 +47,7 @@ public class BunchOTrinketsMain implements ModInitializer {
 			if (player.isFallFlying() && !stack.isEmpty() && stack.getItem() == ROCKET_AGLET && !player.getItemCooldownManager().isCoolingDown(ROCKET_AGLET)) {
 				player.getItemCooldownManager().set(stack.getItem(), 20);
 				stack.damage(1, player, p ->{});
-				player.getEntityWorld().spawnEntity(new FireworkEntity(player.getEntityWorld(), ItemStack.EMPTY, player));
+				player.getEntityWorld().spawnEntity(new FireworkRocketEntity(player.getEntityWorld(), ItemStack.EMPTY, player));
 			}
 		});
 		ServerSidePacketRegistry.INSTANCE.register(BELT_SWAP_PACKET, (context, buffer) -> {

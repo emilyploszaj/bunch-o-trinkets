@@ -38,7 +38,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 		TrinketComponent comp = TrinketsApi.getTrinketComponent((PlayerEntity) (LivingEntity) this);
 		ItemStack stack = comp.getStack(SlotGroups.HAND, Slots.GLOVES);
 		ItemStack tool = getMainHandStack();
-		Map<Enchantment, Integer> enchantments = EnchantmentHelper.getEnchantments(stack);
+		Map<Enchantment, Integer> enchantments = EnchantmentHelper.get(stack);
 		if (!(tool.getItem() instanceof MiningToolItem) && stack.getItem() == BunchOTrinketsMain.MINING_GLOVE) {
 			float f = info.getReturnValue();
 			if (enchantments.containsKey(Enchantments.EFFICIENCY)) {

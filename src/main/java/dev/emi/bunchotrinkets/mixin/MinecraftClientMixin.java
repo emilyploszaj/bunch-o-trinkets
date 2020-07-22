@@ -15,8 +15,8 @@ import io.netty.buffer.Unpooled;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.server.network.packet.CustomPayloadC2SPacket;
-import net.minecraft.util.PacketByteBuf;
+import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.packet.c2s.play.CustomPayloadC2SPacket;
 
 /**
  * Rocket aglet right click behavior

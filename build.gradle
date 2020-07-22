@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.2.5-SNAPSHOT'
+	id 'fabric-loom' version '0.4-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -29,7 +29,7 @@ repositories {
 dependencies {
 	//to change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modCompile "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
@@ -37,15 +37,15 @@ dependencies {
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
-	modImplementation "com.github.emilyploszaj:trinkets:v2.4.0"
-    modImplementation("com.jamieswhiteshirt:reach-entity-attributes:1.0.0") {
+	modImplementation "com.github.emilyploszaj:trinkets:v2.6.1"
+    modImplementation("com.jamieswhiteshirt:reach-entity-attributes:1.0.1") {
 		transitive = false;
 	}
-    include("com.jamieswhiteshirt:reach-entity-attributes:1.0.0") {
+    include("com.jamieswhiteshirt:reach-entity-attributes:1.0.1") {
 		transitive = false;
 	}
-	modImplementation "com.github.emilyploszaj:step-height-entity-attribute:v1.0.0"
-	include "com.github.emilyploszaj:step-height-entity-attribute:v1.0.0"
+	modImplementation "com.github.emilyploszaj:step-height-entity-attribute:v1.0.1"
+	include "com.github.emilyploszaj:step-height-entity-attribute:v1.0.1"
 }
 
 processResources {
